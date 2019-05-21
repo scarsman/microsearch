@@ -72,7 +72,7 @@ def main(enron_data_dir):
     ms = microsearch.Microsearch(data_dir)
 
     print("Collecting the emails...")
-    globby = os.path.join(enron_data_dir, '*/*/*.')
+    globby = os.path.join(enron_data_dir, '*/*/*/*.')
     all_emails = glob.glob(globby)[:1200]
 
     print("Starting indexing {0} docs...".format(len(all_emails)))
